@@ -28,3 +28,15 @@ Route::get('/numero-intero', function () {
 Route::get('/array', function () {
     return $arry=[12,3,14,20];
 });
+
+Route::get('/chi-siamo', function () {
+    return view('chisiamo');
+});
+
+Route::get('/contatti', function () {
+    return view('contatti');
+});
+
+Route::get('/storia', function () {
+    return view('storia');
+});
