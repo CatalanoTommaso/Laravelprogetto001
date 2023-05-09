@@ -14,5 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('homepage');
+});
+
+
+Route::get('/azienda', function () {
+    return view('agency');
+});
+
+
+
+Route::get('/destinazioni', function () {
+    $destinazioni = ['Roma', 'Milano', 'Bari', 'Amsterdam', 'Napoli', 'Praga'];
+    return view('destination',['destinazioni'=>$destinazioni]);
+});
+
+Route::get('/contatti', function () {
+    return view('contact');
 });
